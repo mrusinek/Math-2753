@@ -1,0 +1,54 @@
+\documentclass [12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\newtheorem{thm}{Theorem}
+\newtheorem{thm*}{Theorem}
+\newtheorem{dfn}{Definitionn}
+
+\title{Prompt 3}
+\author{Madylan Rusinek}
+\date{Thursday, Sept. 19, 2019}
+
+\begin{document}
+\maketitle
+\newpage
+\section{Elementary Number Theory}
+This proof based class covers mathematical induction, distribution of primes, %this was my favorite topic 
+congruences, Diophantine equations and divisibility of integers. So essentially, the theory of numbers.
+%pg149 Introduction to congruences, Elementary NUmber Theory and its applications https://www.amazon.com/Elementary-Number-Theory-Its-Application/dp/0321500318/ref=sr_1_1?crid=27TU331LBC6RC&keywords=elementary+number+theory+rosen&qid=1568955004&s=books&sprefix=elementary+number+theory+rose%2Cstripbooks%2C213&sr=1-1
+\begin{thm*}[4.6]
+If \(a,b.c,d\) and \(m\) are integers such that \(m>0\), \(s \equiv b\pmod{m}\), and \( c \equiv d\pmod{m} \) then,
+\begin{centering}
+\begin{enumerate}
+\item \(a + c \equiv b + d\pmod{m}\),
+\item\( a - c\equiv b - d\pmod{m}\),
+\item \({ac}\equiv {bd}\pmod{m}\).
+\end{enumerate}
+\end{centering}
+\end{thm*}
+\section{Mathematical Statistics}
+This class covers many topics in statistics such as distributions, expected values, moments, and probability, and uses calculus to do so.  
+%141
+\begin{thm*}[Chebyshev's Theorem]
+If \(\mu\) and \(\sigma\) are the mean and the standard deviation of a random variable \(X\), then for any positive constant \(k\) the probability is \emph{at least}
+ \(1- \frac{1}{k^2}\) that \(X\) will take on a value with \(k\) standard deviations of the mean; symbolically
+ \[P(|x-\mu| < k\sigma) \geq 1 - \frac{1}{k^2},\sigma \neq 0\] 
+\end{thm*}
+\section{Applied Numerical analysis}
+In this class we approximate solutions to calculus like problems, which include: root finding, integration, differentiation, fixed point and others.
+%54
+\begin{thm*}[2.2]
+\begin{enumerate}
+\item If \(g \in C[a,b]\) and \(g(x) \in [a,b]\) for all \( x \in [a,b]\), then \(g\) has a fixed point in [a,b] .
+\item If, in addition, \(g'(x)\) exists on (a,b) and a positive constant \(k < 1\) exists with
+ \[|g'(x)| \leq k,\] \(x \in (a,b), \)
+
+then the fixed point in [a,b] is unique.
+\end{enumerate}
+\end{thm*}
+\end{document}
+
+%%I really wish I could have gotten  \[|g'(x)| \leq k,\] \(x \in (a,b), \) aligned on the page. I also wish the theorem command was not pre-italicized it makes it difficult to see what letters are important and what phrases are important. I also thought I was using the correct command to get unnumbered theorems but I guess I didn't and I'm not quite sure what I did wrong. The last thing I would like to know is if theres a way to list things with letters instead of numbers.   
